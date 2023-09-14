@@ -1,230 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/myicon.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Мой сайт 1</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>WD</title>
+</head>
+<body>
     <header class="header">
-      <div class="container">
-        <div class="header__inner-flex">
-          <div class="header__logo">wd</div>
-          <ul class="header__navigation">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Об авторе</a></li>
-            <li><a href="#">Работы</a></li>
-            <li><a href="#">Процесс</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="header__inner-grid">
-          <div class="header__grid-left">
-            <img class="header__screen" src="img/screen.svg" alt="Screen" />
+        <div class="container">
+          <div class="header__inner-flex">
+            <div class="header__logo">wd</div>
+            <ul class="header__navigation">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#about">Об авторе</a></li>
+              <li><a href="#work">Работы</a></li>
+              <li><a href="#process">Процесс</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <a class="sidenav-trigger" data-target="slide-out" href="#"><i class="material-icons">menu</i></a>
           </div>
-          <div class="header__grid-right">
-            <h1 class="header__h1">Дизайн и верстка</h1>
-            <p class="text-p header_p">
+          <div class="header__inner-grid">
+            <h1 class="header__h1 header__none1">Дизайн и верстка</h1>
+            <img class="header__screen" src="img/screen.svg" alt="Screen" />
+            <div class="header__grid-text">
+              <h1 class="header__h1 header__none">Дизайн и верстка</h1>
+              <p class="text-p header_p">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br />
+                на латинице с начала XVI века.
+              </p>
+              <button class="header__btn waves-effect">Написать мне</button>
+            </div>
+          </div>
+        </div>
+      </header> 
+        <!-- Бургер-меню -->
+      <ul id="slide-out" class="sidenav">
+        <li class="li_flex"><div class="header__logo">wd</div><a href="#!" class="sidenav-close"> <i class="material-icons">close</i></a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect sidenav-close text" href="#">Главная</a></li>
+        <li><a class="waves-effect sidenav-close text" href="#about">Об авторе</a></li>
+        <li><a class="waves-effect sidenav-close text" href="#work">Работы</a></li>
+        <li><a class="waves-effect sidenav-close text" href="#process">Процесс</a></li>
+        <li><a class="waves-effect sidenav-close text" href="#contacts">Контакты</a></li>
+      </ul>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-text">
+            <h2 class="text-h2 about_h2">Обо мне</h2>
+            <p class="text-p about_p">
               Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br />
               на латинице с начала XVI века.
             </p>
-            <button class="header__btn">Написать мне</button>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="about">
-      <div class="container">
-        <div class="about-item">
-          <h2 class="text-h2 about_h2">Обо мне</h2>
-          <p class="text-p about_p">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br />
-            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br />
-            на латинице с начала XVI века.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="numbers">
-      <div class="container">
-        <div class="numbers__flex">
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class="text-h3 numbers_h3">40+</h3>
-              <p class=" text-p numbers_p">проектов</p>
+      </section>
+      <section class="numbers">
+        <div class="container">
+          <div class="numbers__flex">
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class="text-h3 numbers_h3">40+</h3>
+                <p class=" text-p numbers_p">проектов</p>
+              </div>
             </div>
-          </div>
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class="text-h3 numbers_h3">40+</h3>
-              <p class="text-p numbers_p">проектов</p>
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class="text-h3 numbers_h3">40+</h3>
+                <p class="text-p numbers_p">проектов</p>
+              </div>
             </div>
-          </div>
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class=" text-h3 numbers_h3">40+</h3>
-              <p class="text-p numbers_p">проектов</p>
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class=" text-h3 numbers_h3">40+</h3>
+                <p class="text-p numbers_p">проектов</p>
+              </div>
             </div>
-          </div>
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class="text-h3 numbers_h3">40+</h3>
-              <p class="text-p numbers_p">проектов</p>
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class="text-h3 numbers_h3">40+</h3>
+                <p class="text-p numbers_p">проектов</p>
+              </div>
             </div>
-          </div>
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class="text-h3 numbers_h3">40+</h3>
-              <p class="text-p numbers_p">проектов</p>
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class="text-h3 numbers_h3">40+</h3>
+                <p class="text-p numbers_p">проектов</p>
+              </div>
             </div>
-          </div>
-          <div class="numbers__item">
-            <img class="img" src="img/project.png" alt="Number" />
-            <div class="numbers__text">
-              <h3 class="text-h3 numbers_h3">40+</h3>
-              <p class="text-p numbers_p">проектов</p>
+            <div class="numbers__item">
+              <img class="number__img" src="img/project.png" alt="Number" />
+              <div>
+                <h3 class="text-h3 numbers_h3">40+</h3>
+                <p class="text-p numbers_p">проектов</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="progress-bar">
-      <div class="container__bar">
-        <div class="progress-bar-video__grid">
-          <div class="progress-bar__">
-            <h2 class="text-h2 progress-bar_h2">Мои навыки</h2>
-            <p class="progress-bar_p">Adobe Photoshop</p>
-            <div class="progress-bar-item"> 
-              <div class="progress-bar-completed" style="width: 79%"></div>
-              <div class="progress-bar-remaining" style="width: 21%"></div>
+      </section>
+      <section class="progress-bar">
+        <div class="container">
+          <div class="progress-bar__grid">
+            <div class="progress-bar_wrap">
+              <h2 class="text-h2 progress-bar_h2">Мои навыки</h2>
+              <p class="progress-bar_p">Adobe Photoshop</p>
+              <div class="progress-bar-item"> 
+                <div class="progress-bar-completed" style="width: 79%"></div>
+                <div class="progress-bar-remaining" style="width: 21%"></div>
+              </div>
+              <p class="progress-bar_p">Adobe Photoshop</p>
+              <div class="progress-bar-item">
+                <div class="progress-bar-completed" style="width: 79%"></div>
+                <div class="progress-bar-remaining" style="width: 21%"></div>
+              </div>
+              <p class="progress-bar_p">Adobe Photoshop</p>
+              <div class="progress-bar-item">
+                <div class="progress-bar-completed" style="width: 79%"></div>
+                <div class="progress-bar-remaining" style="width: 21%"></div>
+              </div>
             </div>
-            <p class="progress-bar_p">Adobe Photoshop</p>
-            <div class="progress-bar-item">
-              <div class="progress-bar-completed" style="width: 79%"></div>
-              <div class="progress-bar-remaining" style="width: 21%"></div>
+            <img class="materialboxed progress-bar_img" src="img/Photo.png" alt="Photo">
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="container">
+          <div class="work-item">
+            <h2 class="text-h2 work_h2">Как я работаю</h2>
+            <p class="text-p work_p">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br/>
+                вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br/>
+                на латинице с начала XVI века.
+            </p>
+          </div>
+          <div class="work-item_video">
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/C5WTGOdOek0?si=apZ9Rm_ATydTnv-k' frameborder='0' allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="process">
+        <div class="portfolio__grid">            
+          <div class="portfolio__grid-item ">
+            <img  class="portfolio__img materialboxed" src="img/Rectangle 7.png" alt="Portfolio Item">
+          </div>         
+          <div class="portfolio__grid-item">          
+            <img  class="portfolio__img materialboxed" src="img/view.svg" alt="Portfolio Item">
+            <div class="card-filter"></div>          
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/Rectangle 7.png" alt="Portfolio Item">
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/icon.png" alt="Portfolio Item">
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/icon.png" alt="Portfolio Item">
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/Rectangle 7.png" alt="Portfolio Item">
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/icon.png" alt="Portfolio Item">
+          </div>
+          <div class="portfolio__grid-item">
+            <img  class="portfolio__img materialboxed" src="img/Rectangle 7.png" alt="Portfolio Item">
+          </div>          
+        </div>        
+      </section>
+      <section class="partners">
+        <div class="container">
+          <div class="partners__flex">
+              <img  class="partners_img" src="img/Rectangle 9.png" alt="Partner">
+              <img class="partners_img" src="img/Rectangle 9.png" alt="Partner">
+              <img class="partners_img" src="img/Rectangle 9.png" alt="Partner">
+              <img class="partners_img" src="img/Rectangle 9.png" alt="Partner">
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form_wrap">
+            <h2 class="text-h2 form_h2">Хотите веб-сайт?</h2>
+            <p class="text-p form_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p>
+            <form action="" class="form__write-top" id="forma">
+              <div class="form_inner">
+                  <input class="form__text" type="text1" placeholder="Ваше имя" required pattern="[А-Яа-яЁё]{3,}">
+                  <input class="form__email" type="email1" placeholder="Ваш e-mail" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+              </div>
+              <div class="textarea_wrap"><textarea class="form__textarea" name="" id=""  placeholder="Сообщение"></textarea></div>
+              
+            <button class="form__btn waves-effect" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" id="contacts">
+        <div class="container">
+          <div class="footer__flex">
+            <div class="footer__flex-left">
+              <h3 class="text-h3 footer_h3">Иванов Иван</h3>
+              <p class="footer_p">(с) 2018. Все права защищены.</p>  
             </div>
-            <p class="progress-bar_p">Adobe Photoshop</p>
-            <div class="progress-bar-item">
-              <div class="progress-bar-completed" style="width: 79%"></div>
-              <div class="progress-bar-remaining" style="width: 21%"></div>
+            <div class="footer__flef-right">
+              <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
+              <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
+              <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
             </div>
           </div>
-          <div class="img__skills">
-            <img src="img/Photo.png" alt="Photo">
-          </div>
         </div>
-      </div>
-    </section>
-    <section class="work">
-      <div class="container">
-        <div class="work-item">
-          <h2 class="text-h2 work_h2">Как я работаю</h2>
-          <p class="text-p work_p">
-              Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br/>
-              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br/>
-              на латинице с начала XVI века.
-          </p>
-        </div>
-        <div class="work-item_video">
-          <video width="550" height="300" controls poster="img/bg.png">
-            <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                Тег video не поддерживается вашим браузером.
-            <a href="">Скачайте видео</a>.
-          </video>
-        </div>
-      </div>
-    </section>
-    <section class="portfolio">
-      <div class="portfolio__grid">            
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/Rectangle 7.png" alt="Portfolio Item">
-        </div>         
-        <div class="portfolio__grid-item">          
-          <img  class="portfolio__img" src="img/view.svg" alt="Portfolio Item">
-          <div class="card-filter"></div>          
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/Rectangle 7.png" alt="Portfolio Item">
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/icon.png" alt="Portfolio Item">
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/icon.png" alt="Portfolio Item">
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/Rectangle 7.png" alt="Portfolio Item">
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/icon.png" alt="Portfolio Item">
-        </div>
-        <div class="portfolio__grid-item">
-          <img  class="portfolio__img" src="img/Rectangle 7.png" alt="Portfolio Item">
-        </div>          
-      </div>        
-    </section>
-    <section class="partners">
-      <div class="container">
-        <div class="partners__flex">
-          <div class="partners__item">
-            <img src="img/Rectangle 9.png" alt="Partner">
-          </div>
-          <div class="partners__item">
-            <img src="img/Rectangle 9.png" alt="Partner">
-          </div>
-          <div class="partners__item">
-            <img src="img/Rectangle 9.png" alt="Partner">
-          </div>
-          <div class="partners__item">
-            <img src="img/Rectangle 9.png" alt="Partner">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="form">
-      <div class="container">
-        <div class="form__title">
-          <h2 class="text-h2 form_h2">Хотите веб-сайт?</h2>
-          <p class="text-p form_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и<br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов<br> на латинице с начала XVI века.</p>
-        </div>
-        <div class="form__flex">
-          <form action="" class="form__write-top" id="forma">
-            <div class="form__items-flex">
-                <input class="form__text" type="text" placeholder="Ваше имя">
-                <input class="form__email" type="email" placeholder="Ваш e-mail">
-            </div>
-            <textarea class="form__textarea" name="" id="" cols="30" rows="7" placeholder="Сообщение"></textarea>
-          </form>
-          <div class="form__write-buttom">
-            <button class="form__btn">Отправить</button>
-          </div>
-        </div>    
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__flex">
-          <div class="footer__flex-left">
-            <h3 class="text-h3 footer_h3">Иванов Иван</h3>
-            <p class="footer_p">(с) 2018. Все права защищены.</p>  
-          </div>
-          <div class="footer__flef-right">
-            <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
-            <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
-            <img  class="footer__img" src="img/vk-social-network-logo.svg" alt="logo">
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+      </footer>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
